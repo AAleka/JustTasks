@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/styles">
+        <file>styles/Adaptic.qss</file>
+        <file>styles/SyNet.qss</file>
+    </qresource>
+    <qresource prefix="/db">
+        <file>db/export.txt</file>
+        <file>db/tasks.txt</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>imgs/OnlyTasksIcon.ico</file>
+        <file>imgs/OnlyTasksIcon.png</file>
+    </qresource>
+</RCC>
