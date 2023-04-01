@@ -3,8 +3,8 @@
 
 #include <QMainWindow>
 #include <QVector>
-#include <QtSql/QSql>
-#include <Qtsql/QSqlDatabase>
+#include <QSql>
+#include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QDateTime>
 
