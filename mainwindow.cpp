@@ -52,7 +52,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     std::filesystem::create_directories("./db");
 
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("./db/onlytasks");
 
     bool successful_db_connection = db.open();
@@ -185,5 +185,6 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    db.close();
     delete ui;
 }
