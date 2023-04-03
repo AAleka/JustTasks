@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 9.0.2, 2023-04-02T11:26:38. -->
+<!-- Written by QtCreator 9.0.2, 2023-04-03T08:07:28. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -382,9 +382,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">OnlyTasks</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.OnlyTasks</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">OnlyTasks</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">OnlyTasksv2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.OnlyTasksv2</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">OnlyTasksv2</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
