@@ -22,5 +22,6 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QSqlDatabase db;
 };
 #endif // MAINWINDOW_H
