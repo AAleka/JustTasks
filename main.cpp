@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    a.setWindowIcon(QIcon(":/images/imgs/OnlyTasksIcon.png"));
+    //a.setWindowIcon(QIcon(":/images/imgs/OnlyTasksIcon.png"));
 
     /* ---------------------- Style ---------------------- */
     QFile styleSheetFile(":/styles/styles/Adaptic.qss");
