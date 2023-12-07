@@ -3,8 +3,4 @@
         <file>styles/Adaptic.qss</file>
         <file>styles/SyNet.qss</file>
     </qresource>
-    <qresource prefix="/images">
-        <file>imgs/OnlyTasksIcon.ico</file>
-        <file>imgs/OnlyTasksIcon.png</file>
-    </qresource>
 </RCC>
