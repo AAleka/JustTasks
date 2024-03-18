@@ -1,2 +1,2 @@
-# OnlyTasks
+# JustTasks
 Task manager GUI application
