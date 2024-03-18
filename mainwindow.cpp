@@ -73,7 +73,7 @@ MainWindow::MainWindow(QWidget *parent)
                 insert_query.prepare(insert_into_table);
 
                 insert_query.addBindValue("00000000-0000-0000-0000-000000000000");
-                insert_query.addBindValue("Fill this OnlyTasks app.");
+                insert_query.addBindValue("Fill this JustTasks app.");
                 insert_query.addBindValue(QDateTime::currentDateTime().toString("dd-MM-yyyy"));
 
                 if (insert_query.exec()){
