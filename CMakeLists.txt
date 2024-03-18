@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(OnlyTasks VERSION 0.1 LANGUAGES CXX)
+project(JustTasks VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -20,36 +20,35 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         res.qrc
-        icon.rc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(OnlyTasks
+    qt_add_executable(JustTasks
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
 # Define target properties for Android with Qt 6 as:
-#    set_property(TARGET OnlyTasks APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#    set_property(TARGET JustTasks APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(OnlyTasks SHARED
+        add_library(JustTasks SHARED
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(OnlyTasks
+        add_executable(JustTasks
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
-target_link_libraries(OnlyTasks PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-target_link_libraries(OnlyTasks PRIVATE Qt${QT_VERSION_MAJOR}::Sql)
+target_link_libraries(JustTasks PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(JustTasks PRIVATE Qt${QT_VERSION_MAJOR}::Sql)
 
-set_target_properties(OnlyTasks PROPERTIES
+set_target_properties(JustTasks PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -57,10 +56,10 @@ set_target_properties(OnlyTasks PROPERTIES
     WIN32_EXECUTABLE TRUE
 )
 
-install(TARGETS OnlyTasks
+install(TARGETS JustTasks
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(OnlyTasks)
+    qt_finalize_executable(JustTasks)
 endif()
