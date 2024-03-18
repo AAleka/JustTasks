@@ -53,12 +53,12 @@ MainWindow::MainWindow(QWidget *parent)
     std::filesystem::create_directories("./db");
 
     db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("./db/onlytasks");
+    db.setDatabaseName("./db/justtasks");
 
     bool successful_db_connection = db.open();
 
     if (successful_db_connection){
-        if (!db.tables().contains( QLatin1String("onlytasks"))) {
+        if (!db.tables().contains( QLatin1String("justtasks"))) {
             QSqlQuery create_query;
 
             QString create_table = "CREATE TABLE tasks("
